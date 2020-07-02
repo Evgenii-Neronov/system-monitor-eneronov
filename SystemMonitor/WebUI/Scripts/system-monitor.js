@@ -1,13 +1,9 @@
 ﻿
 function loadTelemetry() {
     var url = "https://system-monitor-eneronov.azurewebsites.net/api/system-monitor/v1/get-telemetry-states/";
-
-    //alert(1);
-
+    
     $.get(url, function (data) {
 
-        //alert(1);
-        
         $("#output").empty();
         $("#output").append("<table><th>");
 
@@ -32,14 +28,9 @@ function loadTelemetry() {
         });
 
         $("#output").append("</table>");
-
-
-
     });
 }
 
 $(function () {
-
     setInterval(loadTelemetry, 1000);
-
 });
