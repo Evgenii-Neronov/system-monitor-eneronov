@@ -24,15 +24,5 @@ namespace WebApi.Controllers
         {
             _telemetry.Put(telemetryStates.ComputerId, telemetryStates);
         }
-        
-        /// <summary>
-        /// Put telemetry states
-        /// </summary>
-        [HttpGet]
-        [Route("api/telemetry-receiver/v1/reset/")]
-        public void Reset()
-        {
-            _telemetry.Reset();
-        }
     }
 }
