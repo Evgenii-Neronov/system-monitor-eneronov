@@ -48,6 +48,8 @@ namespace AgentCmd
                     Console.WriteLine(response);
                 }
 
+                Console.WriteLine("Data sent..");
+
                 Thread.Sleep(1000);
             }
         }
